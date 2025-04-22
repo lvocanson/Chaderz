@@ -1251,13 +1251,13 @@ MonoBehaviour:
   m_StartDelay: 3
   m_EndDelay: 3
   m_CameraControl: {fileID: 1771596988}
-  m_Tank1Prefab: {fileID: 7273797243869566079, guid: 4e4dfc54255f9194f83de96498840976,
+  m_Tank1Prefab: {fileID: 5154945254994967036, guid: 8572c96f3d9b0de40ba61f608ecd8c28,
     type: 3}
-  m_Tank2Prefab: {fileID: 2259141219951711155, guid: 3bf67396ffb95614180c5feab2796265,
+  m_Tank2Prefab: {fileID: 5154945254994967036, guid: f0546289a954f7e4a926bb54322c3da1,
     type: 3}
-  m_Tank3Prefab: {fileID: 2204552607319198144, guid: 87f870c398311424ea8f5310e8617cbf,
+  m_Tank3Prefab: {fileID: 5154945254994967036, guid: fd658ac299669044ca0b5de0eb9846c3,
     type: 3}
-  m_Tank4Prefab: {fileID: 2229267103195021085, guid: a12bd3539b0131144bdd7699a05d956f,
+  m_Tank4Prefab: {fileID: 5154945254994967036, guid: 0a546a1a015cc8e47a9900c93f16c768,
     type: 3}
   m_SpawnPoints:
   - m_PlayerColor: {r: 0.16470589, g: 0.39215687, b: 0.69803923, a: 0}
@@ -4348,25 +4348,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SerializedVersion: 0
-  m_AgentTypeID: -1372625422
-  m_CollectObjects: 0
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 2, z: 0}
-  m_LayerMask:
-    m_Bits: 9527
-  m_UseGeometry: 0
-  m_DefaultArea: 0
-  m_GenerateLinks: 0
-  m_IgnoreNavMeshAgent: 1
-  m_IgnoreNavMeshObstacle: 1
-  m_OverrideTileSize: 0
-  m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.33333334
-  m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: c12916cdc9c34dd42be20583c5c68a03, type: 2}
-  m_BuildHeightMesh: 0
 --- !u!1 &1359195124
 GameObject:
   m_ObjectHideFlags: 0
@@ -4545,53 +4526,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 1391056264}
-  volumeLayer:
-    m_Bits: 1024
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 1
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
 --- !u!20 &1391056263
 Camera:
   m_ObjectHideFlags: 0

@@ -1,15 +1,7 @@
 fileFormatVersion: 2
-guid: 4e4dfc54255f9194f83de96498840976
+guid: 8572c96f3d9b0de40ba61f608ecd8c28
 PrefabImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 46209
-  packageName: Tanks! | Complete Project
-  packageVersion: 3.0
-  assetPath: Assets/_Tanks/Tutorial_Demo/Demo_Prefabs/Demo_Tanks/Demo_Tank - ATV
-    Variant.prefab
-  uploadId: 747463

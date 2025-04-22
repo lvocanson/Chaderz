@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace Tanks.Complete
@@ -12,7 +13,8 @@ namespace Tanks.Complete
         public Color m_ZeroHealthColor = Color.red;      // The color the health bar will be when on no health.
         public GameObject m_ExplosionPrefab;                // A prefab that will be instantiated in Awake, then used whenever the tank dies.
         [HideInInspector] public bool m_HasShield;          // Has the tank picked up a shield power up?
-        
+
+        public UnityEvent<float> OnHealthChanged;
         
         private AudioSource m_ExplosionAudio;               // The audio source to play when the tank explodes.
         private float m_CurrentHealth;                      // How much health the tank currently has.
@@ -51,6 +53,7 @@ namespace Tanks.Complete
             {
                 // Reduce current health by the amount of damage done.
                 m_CurrentHealth -= amount * (1 - m_ShieldValue);
+                OnHealthChanged.Invoke(m_CurrentHealth);
 
                 // Change the UI elements appropriately.
                 SetHealthUI ();

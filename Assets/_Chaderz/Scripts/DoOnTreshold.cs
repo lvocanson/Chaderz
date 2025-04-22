@@ -9,7 +9,7 @@ public class DoOnTreshold : MonoBehaviour
         [InspectorName("< ")] StrictlyInferior,
         [InspectorName("<=")] InferiorOrEqual,
         [InspectorName("> ")] StrictlySuperior,
-		[InspectorName("<=")] SuperiorOrEqual
+		[InspectorName(">=")] SuperiorOrEqual
     }
 
     [Tooltip("The operation to execute : `value [Operation] Treshold`")]

@@ -17,7 +17,7 @@ namespace Tanks.Complete
         public UnityEvent<float> OnHealthChanged;
 
         private AudioSource m_ExplosionAudio;               // The audio source to play when the tank explodes.
-        private float m_CurrentHealth;                      // How much health the tank currently has.
+        public float m_CurrentHealth;                      // How much health the tank currently has.
         private bool m_Dead;                                // Has the tank been reduced beyond zero health yet?
         private float m_ShieldValue;                        // Percentage of reduced damage when the tank has a shield.
         private bool m_IsInvincible;                        // Is the tank invincible in this moment?

@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3232473096603278542}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.23430061, y: 0, z: -1.0306892}
+  m_LocalPosition: {x: -0.23430061, y: -0.29, z: -1.0306892}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -278,6 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _light: {fileID: 4335144183244163092}
   _vfx: {fileID: 3232473096603278542}
+  _decal: {fileID: 3794201633595678715, guid: e49f05d10c0bc004fabd746a51d92599, type: 3}
   _lightDelay: 3
   _timeToLightMaxRange: 0.25
   _lightMaxRange: 5

@@ -6,11 +6,11 @@ using UnityEngine.VFX;
 public class Lightning : MonoBehaviour
 {
     [SerializeField]
-    GameObject _light, _vfx;
+    GameObject _light, _vfx, _decal;
 
     [SerializeField]
     float _lightDelay, _timeToLightMaxRange, _lightMaxRange;
-    
+
     public LayerMask m_TankMask;
     public float m_MaxDamage = 100f;                    // The amount of damage done if the explosion is centred on a tank.
     public float m_ExplosionForce = 1000f;              // The amount of force added to a tank at the centre of the explosion.
@@ -32,6 +32,7 @@ public class Lightning : MonoBehaviour
         }
         GetComponent<SphereCollider>().enabled = true;
         _vfx.SetActive(true);
+        Instantiate(_decal, transform.position, _decal.transform.rotation);
         yield return new WaitForSeconds(_vfx.GetComponent<VisualEffect>().GetFloat("_lifeTime"));
         Destroy(gameObject);
     }

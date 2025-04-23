@@ -219,6 +219,35 @@ MonoBehaviour:
   m_MaxDamage: 100
   m_ExplosionForce: 1000
   m_ExplosionRadius: 5
+  _rb: {fileID: 5409530}
+  TimeDilationStartDistance: 10
+  TimeDilationTarget:
+    serializedVersion: 2
+    m_Bits: 512
+  TimeDilationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -2.903407
+      outSlope: -2.903407
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.02616427
+    - serializedVersion: 3
+      time: 1
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &-927890215427519120
 MonoBehaviour:
   m_ObjectHideFlags: 0

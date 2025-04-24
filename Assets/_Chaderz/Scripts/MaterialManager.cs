@@ -9,4 +9,11 @@ public class MaterialManager : MonoBehaviour
 		_shellMat.SetFloat("_UnscaledTime", Time.unscaledTime);
 		_shellMat.SetFloat("_TimeScale", Time.timeScale);
 	}
+
+	private void OnDestroy()
+	{
+		// Reset (avoid git changes)
+		_shellMat.SetFloat("_UnscaledTime", 0f);
+		_shellMat.SetFloat("_TimeScale", 0f);
+	}
 }

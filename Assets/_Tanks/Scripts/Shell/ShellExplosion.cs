@@ -32,24 +32,27 @@ namespace Tanks.Complete
 
 		private void Update()
 		{
-			if (Physics.Raycast(_rb.position, _rb.velocity, out RaycastHit info, TimeDilationStartDistance, TimeDilationTarget))
+			if (Physics.Raycast(_rb.position, Vector3.ProjectOnPlane(_rb.velocity, Vector3.up), out RaycastHit info, TimeDilationStartDistance, TimeDilationTarget))
 			{
 				var health = info.collider.GetComponent<TankHealth>();
 				if (health && health.m_CurrentHealth < m_MaxDamage)
 				{
 					float t = 1f - info.distance / TimeDilationStartDistance;
 					Time.timeScale = TimeDilationCurve.Evaluate(t);
+					MaterialManager.Instance.UpdateShellPosition(gameObject, true);
 				}
 			}
 			else
 			{
 				Time.timeScale = TimeDilationCurve.Evaluate(0f);
+				MaterialManager.Instance.UpdateShellPosition(gameObject, false);
 			}
 		}
 
 		private void OnDestroy()
 		{
 			Time.timeScale = TimeDilationCurve.Evaluate(0f);
+			MaterialManager.Instance.UpdateShellPosition(gameObject, false);
 		}
 
 		private void OnTriggerEnter(Collider other)

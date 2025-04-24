@@ -19300,6 +19300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shellMat: {fileID: 2100000, guid: c6c283209a4e89e47a0f10b689963be8, type: 2}
   _grassMat: {fileID: 2100000, guid: 34d126681f2e7e0489e834a681407d3f, type: 2}
+  _shellVignetteMat: {fileID: 2100000, guid: 003aca7918474e448804a827ca79a9c9, type: 2}
 --- !u!1001 &1309030305
 PrefabInstance:
   m_ObjectHideFlags: 0

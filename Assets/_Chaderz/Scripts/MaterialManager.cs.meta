@@ -5,6 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - _shellMat: {fileID: 2100000, guid: c6c283209a4e89e47a0f10b689963be8, type: 2}
+  - _shellVignetteMat: {fileID: 2100000, guid: 003aca7918474e448804a827ca79a9c9, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

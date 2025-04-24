@@ -140,6 +140,8 @@ namespace Tanks.Complete
                 
                 tank.Setup(this);
             }
+
+            GetComponent<MaterialManager>().SetupGrass(m_PlayerCount, m_SpawnPoints);
         }
 
 

@@ -150,6 +150,16 @@ PrefabInstance:
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 190054919759680811, guid: 47df4a151a029a645902d00c2989e1e0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 41a353274c4483b4fb647f7932da2f59, type: 2}
+    - target: {fileID: 1267113164878291307, guid: 47df4a151a029a645902d00c2989e1e0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 41a353274c4483b4fb647f7932da2f59, type: 2}
     - target: {fileID: 2012821553035061317, guid: 47df4a151a029a645902d00c2989e1e0,
         type: 3}
       propertyPath: m_LocalPosition.y

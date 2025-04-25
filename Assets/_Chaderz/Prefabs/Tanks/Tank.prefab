@@ -1103,6 +1103,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_CurrentHealth: 0
 --- !u!114 &11488788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1431,7 +1432,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 41a353274c4483b4fb647f7932da2f59, type: 2}
+  - {fileID: 2100000, guid: e0b612d8a8404874583b5e61cf0838e9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1567,7 +1568,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 41a353274c4483b4fb647f7932da2f59, type: 2}
+  - {fileID: 2100000, guid: e0b612d8a8404874583b5e61cf0838e9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

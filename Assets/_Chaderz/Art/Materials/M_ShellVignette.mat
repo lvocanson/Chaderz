@@ -39,6 +39,6 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _GradientColor: {r: 1, g: 0, b: 0, a: 0.5019608}
-    - _GradientStartEnd: {r: 15, g: 30, b: 0, a: 0}
+    - _GradientColor: {r: 0, g: 0, b: 0, a: 0.8}
+    - _GradientStartEnd: {r: 50, g: 200, b: 0, a: 0}
   m_BuildTextureStacks: []

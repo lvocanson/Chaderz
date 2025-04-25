@@ -41,7 +41,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113952}
   serializedVersion: 8
-  lengthInSec: 0.3
+  lengthInSec: 0.15
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 1
@@ -50,7 +50,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -968,7 +968,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0.0031152645
+          time: 0
           value: 0.016304344
           inSlope: 0.08579832
           outSlope: 0.08579832
@@ -979,14 +979,14 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0.17508925
           value: 0.4565217
-          inSlope: 4.0959506
-          outSlope: 4.0959506
+          inSlope: 1.3922775
+          outSlope: 1.3922775
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.33333334
+          outWeight: 0.117606364
         - serializedVersion: 3
-          time: 0.76947033
+          time: 1
           value: 0.010869565
           inSlope: -6.0546746
           outSlope: -6.0546746
@@ -1291,7 +1291,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 1
+    enabled: 0
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -4771,7 +4771,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: af6af579f3fe54a8eb34489684d90b6a, type: 2}
+  - {fileID: 2100000, guid: 4aa8fa4fa8cad9d4ba8021cee21ba9a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4877,7 +4877,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -9656,7 +9656,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: af6af579f3fe54a8eb34489684d90b6a, type: 2}
+  - {fileID: 2100000, guid: 4aa8fa4fa8cad9d4ba8021cee21ba9a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9855,7 +9855,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -10092,7 +10092,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 4
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -14661,7 +14661,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4aa8fa4fa8cad9d4ba8021cee21ba9a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -13,7 +13,6 @@ namespace Tanks.Complete
 		[HideInInspector] public float m_ExplosionForce = 1000f;              // The amount of force added to a tank at the centre of the explosion.
 		[HideInInspector] public float m_ExplosionRadius = 5f;                // The maximum distance away from the explosion tanks can be and are still affected.
 
-
 		private void Start()
 		{
 			// If it isn't destroyed by then, destroy the shell after its lifetime.
@@ -21,6 +20,7 @@ namespace Tanks.Complete
 		}
 
 		public Rigidbody _rb;
+		public GameObject _explosionPrefab;
 		public float TimeDilationStartDistance;
 		public LayerMask TimeDilationTarget;
 		public AnimationCurve TimeDilationCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
@@ -89,6 +89,9 @@ namespace Tanks.Complete
 
 			// Destroy the shell.
 			Destroy(gameObject);
+
+			var go = Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
+			Destroy(go, 10f);
 		}
 
 
